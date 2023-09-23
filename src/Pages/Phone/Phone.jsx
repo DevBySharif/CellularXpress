@@ -11,7 +11,6 @@ const Phone = () => {
     const findPhone = phones.find((phone) => phone.id === id);
     setPhone(findPhone);
   }, [id, phones]);
-  const { image, phone_name, brand_name } = phone;
   return (
     <div>
       <PhoneDetails phone={phone}></PhoneDetails>

@@ -50,15 +50,15 @@ const Favorites = () => {
                   <FavoritesCard key={phone.id} phone={phone}></FavoritesCard>
                 ))
               : favorites
-                  .slice(0, 4)
+                  .slice(0, 3)
                   .map((phone) => (
                     <FavoritesCard key={phone.id} phone={phone}></FavoritesCard>
                   ))}
           </div>
-          {favorites.length > 4 && (
+          {favorites.length > 3 && (
             <button
               onClick={() => setIsShow(!isShow)}
-              className="px-5 bg-green-400 block mx-auto rounded-md"
+              className="px-5 my-5 bg-green-400 block mx-auto rounded-md"
             >
               {isShow ? "See less" : "See more"}
             </button>
